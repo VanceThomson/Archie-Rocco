@@ -63,13 +63,16 @@ nav a:hover::after {
   box-shadow: 0 6px 15px rgba(0,0,0,0.6);
 }
 
-/* VERTICAL SHORTS FIX */
 .gallery-item iframe {
-  width: 50%;
-  aspect-ratio: 9 / 16; /* vertical video */
+  width: 100%;
+  max-width: 195px;   /* ← controls how small the video is */
+  aspect-ratio: 9 / 16;
   height: auto;
   border: none;
+  display: block;
+  margin: 0 auto;     /* centers the video */
 }
+
 
 /* CAPTION */
 .caption {
