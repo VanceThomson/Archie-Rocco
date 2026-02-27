@@ -1,36 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <style>body { margin: 0; }
-  .header {
-    color: black;
-    background-color: lightblue;
-    padding: 50px;
-    text-align: center;
-  }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Archie&Rocco</title>
+  <style>
+    body { margin: 0; }
+    .header {
+      color: black;
+      background-color: lightblue;
+      padding: 50px;
+      text-align: center;
+    }
+
+    /* Nav links with middle-to-out underline animation */
+    nav {
+      margin-top: 20px; /* space below logo if needed */
+      text-align: center;
+    }
+
+    nav a {
+      color: black;
+      font-size: 30px;
+      margin: 0 25px; /* spacing between links */
+      text-decoration: none;
+      position: relative; /* allows positioning the underline */
+      display: inline-block;
+      padding-bottom: 6px; /* space for the underline */
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #333; /* darker on hover – optional */
+    }
+
+    /* The black underline that grows from middle outward */
+    nav a::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;               /* starts in the middle */
+      width: 0;
+      height: 3px;             /* thickness of line – change if you want */
+      background-color: black;
+      transition: width 0.4s ease, left 0.4s ease;
+    }
+
+    nav a:hover::after {
+      width: 100%;             /* grows to full width */
+      left: 0;                 /* expands from middle to both sides */
+    }
   </style>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Archie&Rocco</title>
 </head>
 <body>
-  <div class="header">  
-    <img src="Archie&Rocco1.png" width="145px">
-    <style>
-  .custom-link {
-    display: inline-block;
-    color: Black;         
-    font-size: 30px;       
-    margin-left: 0;        
-    text-decoration: none; 
-  }
 
-  .container {
-    background-color: #333;
-    padding: 20px;
-  }
-</style>
+  <div class="header">  
+    <img src="Archie&Rocco1.png" width="145px" alt="Archie & Rocco Logo">
   </div>
-    <p style="text-align: center";>Just a Corgi & A Golden</p>
+
+  <nav>
+    <a href="main.html">Home</a>
+    <a href="Gallery.html">Gallery</a>
+    <a href="Members.html">Members</a>
+    <a href="ShoppingDescription.html">Shop</a>
+  </nav>
+
+  <!-- Rest of your page content here -->
+
 </body>
 </html>
