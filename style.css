@@ -1,4 +1,4 @@
-/* GENERAL */
+
 body {
   margin: 0;
   background: #111;
@@ -6,7 +6,7 @@ body {
   font-family: Arial, sans-serif;
 }
 
-/* HEADER */
+
 .header {
   background-color: lightblue;
   color: black;
@@ -57,7 +57,7 @@ nav a:hover::after {
   justify-items: center;
 }
 
-/* SHORTS — 9:16, bigger, clean */
+
 .gallery-grid iframe {
   width: 100%;
   max-width: 330px;   /* adjust size here */
@@ -74,14 +74,16 @@ footer {
   color: #aaa;
 }
 
-/* HEADER */
-.header {
+
+  .header img {
+  height: 80px;  
+  width: auto;
   background-color: lightblue;
   color: black;
   padding: 20px 40px;
   display: flex;
   align-items: center;
-  justify-content: space-between; /* logo left, nav right */
+  justify-content: space-between; 
 }
 
 .header img {
