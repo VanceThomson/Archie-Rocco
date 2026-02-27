@@ -65,7 +65,7 @@ nav a:hover::after {
 
 /* VERTICAL SHORTS FIX */
 .gallery-item iframe {
-  width: 100%;
+  width: 50%;
   aspect-ratio: 9 / 16; /* vertical video */
   height: auto;
   border: none;
