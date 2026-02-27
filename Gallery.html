@@ -1,1 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gallery – Archie&Rocco</title>
+  <style>
+    /* Copy the same <style> block from main.html here */
+    /* ... paste the full style from above ... */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 25px;
+    }
+    .gallery-item {
+      background: #1e1e1e;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.6);
+    }
+    .gallery-item img, .gallery-item iframe {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .caption {
+      padding: 15px;
+      text-align: center;
+      font-size: 18px;
+      color: #ffcc00;
+    }
+  </style>
+</head>
+<body>
 
+  <!-- Same header as main.html -->
+  <header>
+    <!-- ... paste header code from main.html ... -->
+  </header>
+
+  <section>
+    <h1>Gallery</h1>
+    <div class="gallery-grid">
+      <!-- Add your brother's YouTube embeds or photos here -->
+      <div class="gallery-item">
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" allowfullscreen></iframe>
+        <p class="caption">Rocco vs The Squirrel – Epic Chase</p>
+      </div>
+
+      <div class="gallery-item">
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" allowfullscreen></iframe>
+        <p class="caption">Archie Steals Rocco’s Bed – Dog Drama</p>
+      </div>
+
+      <!-- Add more as needed -->
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Archie&Rocco – Made with ❤️ by Vance
+  </footer>
+
+</body>
+</html>
