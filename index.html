@@ -13,42 +13,41 @@
       text-align: center;
     }
 
-    /* Nav links with middle-to-out underline animation */
     nav {
-      margin-top: 20px; /* space below logo if needed */
+      margin-top: 20px;
       text-align: center;
     }
 
     nav a {
       color: black;
       font-size: 30px;
-      margin: 0 25px; /* spacing between links */
+      margin: 0 25px; 
       text-decoration: none;
-      position: relative; /* allows positioning the underline */
+      position: relative; 
       display: inline-block;
-      padding-bottom: 6px; /* space for the underline */
+      padding-bottom: 6px;
       transition: color 0.3s;
     }
 
     nav a:hover {
-      color: #333; /* darker on hover – optional */
+      color: #333; 
     }
 
-    /* The black underline that grows from middle outward */
+   
     nav a::after {
       content: '';
       position: absolute;
       bottom: 0;
-      left: 50%;               /* starts in the middle */
+      left: 50%;              
       width: 0;
-      height: 3px;             /* thickness of line – change if you want */
+      height: 3px;             
       background-color: black;
       transition: width 0.4s ease, left 0.4s ease;
     }
 
     nav a:hover::after {
-      width: 100%;             /* grows to full width */
-      left: 0;                 /* expands from middle to both sides */
+      width: 100%;             
+      left: 0;                 
     }
   </style>
 </head>
@@ -65,7 +64,7 @@
     <a href="ShoppingDescription.html">Shop</a>
   </nav>
 
-  <!-- Rest of your page content here -->
+ 
 
 </body>
 </html>
