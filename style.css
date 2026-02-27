@@ -48,13 +48,13 @@ nav a:hover::after {
   left: 0;
 }
 
-/* GALLERY GRID */
+
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 25px;
   padding: 20px;
-  justify-items: center; /* centers videos */
+  justify-items: center;
 }
 
 /* SHORTS (NO BOXES) */
