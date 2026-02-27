@@ -74,17 +74,67 @@ footer {
   color: #aaa;
 }
 
-
-  .header img {
-  height: 80px;  
-  width: auto;
+/* HEADER */
+.header {
   background-color: lightblue;
-  color: black;
-  padding: 20px 40px;
+  height: 55px;
   display: flex;
   align-items: center;
-  justify-content: space-between; 
+  justify-content: space-between;
+  padding: 0 25px;
 }
+
+/* LOGO */
+.logo {
+  height: 45px;   /* fits inside 55px header */
+  width: auto;
+}
+
+/* NAVIGATION */
+nav {
+  display: flex;
+  gap: 35px;
+}
+
+nav a {
+  color: black;
+  font-size: 22px;
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 4px;
+  font-weight: 600;
+}
+
+/* HOVER UNDERLINE ANIMATION (center → outward) */
+nav a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 3px;
+  background-color: black;
+  transition: width 0.35s ease, left 0.35s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+/* MAIN SECTION */
+.home-section {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #aaa;
+}
+
 
 .header img {
   height: 80px; /* keeps logo a good size */
