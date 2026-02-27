@@ -73,3 +73,33 @@ footer {
   padding: 20px;
   color: #aaa;
 }
+
+/* HEADER */
+.header {
+  background-color: lightblue;
+  color: black;
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* logo left, nav right */
+}
+
+.header img {
+  height: 80px; /* keeps logo a good size */
+}
+
+nav a {
+  color: black;
+  font-size: 24px;
+  margin: 0 20px;
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 6px;
+  transition: color 0.3s;
+}
+
+nav {
+  display: flex;
+  gap: 25px;
+}
+
