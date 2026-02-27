@@ -1,18 +1,75 @@
+/* GENERAL */
+body {
+  margin: 0;
+  background: #111;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+.header {
+  background-color: lightblue;
+  color: black;
+  padding: 40px;
+  text-align: center;
+}
+
+nav {
+  margin-top: 20px;
+}
+
+nav a {
+  color: black;
+  font-size: 24px;
+  margin: 0 20px;
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 6px;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #333;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 3px;
+  background-color: black;
+  transition: width 0.4s ease, left 0.4s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
 /* GALLERY GRID */
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 30px;
   padding: 20px;
-  justify-items: center; /* centers each video */
+  justify-items: center;
 }
 
-/* SHORTS SIZE + FORMAT */
+/* SHORTS — 9:16, bigger, clean */
 .gallery-grid iframe {
   width: 100%;
-  max-width: 300px;   /* bigger Shorts */
+  max-width: 330px;   /* adjust size here */
   aspect-ratio: 9 / 16;
   height: auto;
   border: none;
   display: block;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #aaa;
 }
