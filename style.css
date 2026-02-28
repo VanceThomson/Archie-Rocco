@@ -89,16 +89,6 @@ footer {
   color: #aaa;
 }
 
-.header {
-  background-color: lightblue;
-  height: 55px;
-  display: flex;
-  flex-direction: column;   
-  align-items: center;     
-  justify-content: center;  
-  padding: 0;
-}
-
 .logo {
   height: 35px;   /* fits inside 55px header */
   width: auto;
