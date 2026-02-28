@@ -6,7 +6,6 @@
   <title>Gallery – Archie & Rocco</title>
 
   <style>
-    /* Reset defaults to prevent cutoff */
     * {
       margin: 0;
       padding: 0;
@@ -20,31 +19,31 @@
       background-color: #0d0d0d;
       color: #ffffff;
       font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
     }
 
-    /* Header styling (light blue like your original) */
+    /* Header */
     .header {
       background-color: lightblue;
       color: black;
-      padding: 30px 20px 20px; /* Less top padding to avoid cutoff */
+      padding: 30px 20px 20px;
       text-align: center;
       position: sticky;
       top: 0;
       z-index: 1000;
-      border-bottom: 3px solid #000; /* Optional dark line for contrast */
+      border-bottom: 3px solid #000;
     }
 
     .header img {
-      max-height: 100px; /* Adjust this to fit your logo size */
+      max-height: 100px;
       width: auto;
       display: block;
-      margin: 0 auto 15px; /* Centers logo and adds space below */
+      margin: 0 auto 15px;
     }
 
-    /* Navigation with middle-to-out black underline animation */
     nav {
       margin-top: 15px;
-      text-align: center;
     }
 
     nav a {
@@ -59,7 +58,7 @@
     }
 
     nav a:hover {
-      color: #333; /* Slightly darker on hover */
+      color: #333;
     }
 
     nav a::after {
@@ -78,11 +77,13 @@
       left: 0;
     }
 
-    /* Gallery content */
-    section {
+    /* Main content – grows to fill space */
+    main {
+      flex: 1; /* This pushes footer to bottom */
       padding: 60px 20px 40px;
       max-width: 1200px;
       margin: 0 auto;
+      width: 100%;
     }
 
     h1 {
@@ -92,15 +93,17 @@
       font-size: 48px;
     }
 
+    /* Tighter back-to-back video grid with longer videos */
     .gallery-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-      gap: 30px;
+      gap: 20px; /* Reduced gap for back-to-back feel */
+      margin: 0 auto;
     }
 
     .gallery-grid iframe {
       width: 100%;
-      height: 300px;
+      height: 450px; /* Longer vertical videos */
       border: none;
       border-radius: 12px;
       box-shadow: 0 6px 20px rgba(0,0,0,0.7);
@@ -112,7 +115,7 @@
       background: #1a1a1a;
       border-top: 1px solid #333;
       font-size: 16px;
-      margin-top: 40px;
+      width: 100%;
     }
   </style>
 </head>
@@ -127,15 +130,16 @@
     </nav>
   </header>
 
-  <!-- Gallery Content -->
-  <section>
-    <h1>Gallery</h1>
-    <div class="gallery-grid">
-      <iframe src="https://www.youtube.com/embed/gkeq1Su9msc" allowfullscreen></iframe>
-      <iframe src="https://www.youtube.com/embed/MSDBRwmVtiM" allowfullscreen></iframe>
-      <!-- Add more iframes here as needed -->
-    </div>
-  </section>
+  <main>
+    <section>
+      <h1>Gallery</h1>
+      <div class="gallery-grid">
+        <iframe src="https://www.youtube.com/embed/gkeq1Su9msc" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/MSDBRwmVtiM" allowfullscreen></iframe>
+        <!-- Add more iframes here for back-to-back videos -->
+      </div>
+    </section>
+  </main>
 
   <footer>
     © 2026 Archie & Rocco – Made by Vance
