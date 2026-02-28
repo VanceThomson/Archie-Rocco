@@ -9,10 +9,25 @@ body {
 
 .header {
   background-color: lightblue;
-  color: black;
-  padding: 40px;
-  text-align: center;
+  height: 55px;
+  display: flex;
+  flex-direction: column;   /* stack logo above nav */
+  align-items: center;      /* center horizontally */
+  justify-content: center;  /* center vertically */
+  padding: 0;
 }
+
+.logo {
+  height: 35px;   /* fits inside 55px header */
+  width: auto;
+  margin-bottom: 2px;
+}
+
+nav {
+  display: flex;
+  gap: 30px;
+}
+
 
 nav {
   margin-top: 20px;
