@@ -74,15 +74,27 @@ footer {
   color: #aaa;
 }
 
-/* HEADER */
 .header {
   background-color: lightblue;
   height: 55px;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 25px;
+  flex-direction: column;   
+  align-items: center;     
+  justify-content: center;  
+  padding: 0;
 }
+
+.logo {
+  height: 35px;   /* fits inside 55px header */
+  width: auto;
+  margin-bottom: 2px;
+}
+
+nav {
+  display: flex;
+  gap: 30px;
+}
+
 
 /* LOGO */
 .logo {
