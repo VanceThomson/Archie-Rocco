@@ -167,3 +167,10 @@ nav {
   gap: 25px;
 }
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* Optional: set a width for the centering to work effectively */
+  width: 50%; 
+}
