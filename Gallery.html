@@ -4,36 +4,117 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Gallery – Archie & Rocco</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+  <link rel="stylesheet" href="style.css"> 
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #0d0d0d;
+      color: #ffffff;
+      min-height: 100vh;
+    }
+
+  /
+    .header {
+      background-color: #1a1a1a;
+      padding: 20px;                   
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 3px solid #ffcc00; 
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    }
+
+    .header img {
+      max-height: 80px;                
+      width: auto;
+      margin-bottom: 15px;             
+      display: block;
+    }
+
+    nav {
+      display: flex;
+      gap: 40px;                       
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 22px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffcc00;
+    }
+
+   
+    section {
+      padding: 60px 20px 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      text-align: center;
+      color: #ffcc00;
+      margin-bottom: 40px;
+      font-size: 48px;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      gap: 30px;
+    }
+
+    .gallery-grid iframe {
+      width: 100%;
+      height: 300px;                  
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.7);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #1a1a1a;
+      border-top: 1px solid #333;
+      font-size: 16px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
 <body>
 
-<header class="header">
-  <img src="Archie&Rocco1.png" alt="Archie & Rocco Logo">
-  <nav>
-    <a href="index.html" style="color: white;">Home</a>
-    <a href="Shop.html" style="color: white;">Shop</a>
-    <a href="Members.html" style="color: white;">Members</a>
-  </nav>
-</header>
+  <header class="header">
+    <img src="Archie&Rocco1.png" alt="Archie & Rocco Logo">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="Shop.html">Shop</a>
+      <a href="Members.html">Members</a>
+    </nav>
+  </header>
 
-  <!-- GALLERY -->
+
   <section>
-    <h1 style="text-align:center;">Gallery</h1>
-
+    <h1>Gallery</h1>
     <div class="gallery-grid">
-
-      <iframe 
-        src="https://www.youtube.com/embed/gkeq1Su9msc"
-        allowfullscreen>
-      </iframe>
-
-      <iframe 
-        src="https://www.youtube.com/embed/MSDBRwmVtiM"
-        allowfullscreen>
-      </iframe>
-
+      <iframe src="https://www.youtube.com/embed/gkeq1Su9msc" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/MSDBRwmVtiM" allowfullscreen></iframe>
+      <!-- Add more iframes here as needed -->
     </div>
   </section>
 
