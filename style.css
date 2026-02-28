@@ -189,3 +189,6 @@ nav {
   /* Optional: set a width for the centering to work effectively */
   width: 50%; 
 }
+section {
+  margin-top: 60px;
+}
